@@ -1,6 +1,6 @@
 # README
 
-Testblog in progress
+Testblog in progress!
 
 Things you may want to cover:
 
