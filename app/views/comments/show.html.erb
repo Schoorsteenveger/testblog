@@ -1,14 +1,21 @@
-<p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Post:</strong>
-  <%= @comment.post_id %>
-</p>
+<div class="container">
+  <div class="row">
+    <div class="col-md-8">
+      <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Body:</strong>
-  <%= @comment.body %>
-</p>
+      <p>
+        <h2>Post:</h2>
+        <%= @comment.post_id %>
+      </p>
 
-<%= link_to 'Edit', edit_comment_path(@comment) %> |
-<%= link_to 'Back', comments_path %>
+      <p>
+        <strong>Body:</strong>
+        <%= @comment.body %>
+      </p>
+
+      <%= link_to 'Edit', edit_comment_path(@comment) %> |
+      <%= link_to 'Back', comments_path %>
+    </div>
+  </div> 
+</div>
