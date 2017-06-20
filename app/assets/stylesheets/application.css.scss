@@ -1,8 +1,6 @@
-/*!
- * Start Bootstrap - Clean Blog v3.3.7+1 (http://startbootstrap.com/template-overviews/clean-blog)
- * Copyright 2013-2017 Start Bootstrap
- * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
- */
+@import 'bootstrap-sprockets';
+@import 'bootstrap';
+
 body {
   font-family: 'Lora', 'Times New Roman', serif;
   font-size: 20px;
@@ -145,7 +143,8 @@ hr.small {
   }
 }
 .intro-header {
-  background-color: #777777;
+  background-image: url('img/coffee-mugs.png');
+  background-color: rgb(245, 245, 220);
   background: no-repeat center center;
   background-attachment: scroll;
   -webkit-background-size: cover;
@@ -158,7 +157,7 @@ hr.small {
 .intro-header .post-heading,
 .intro-header .page-heading {
   padding: 100px 0 50px;
-  color: white;
+  color: black;
 }
 @media only screen and (min-width: 768px) {
   .intro-header .site-heading,
@@ -276,8 +275,7 @@ hr.small {
   border-bottom-left-radius: 5px;
 }
 footer {
-  padding: 100px 0 50px;
-  height:400px;
+  padding: 50px 0 65px;
 }
 footer .list-inline {
   margin: 0;
@@ -323,10 +321,6 @@ footer .copyright {
   -moz-transition: top 0.3s ease,opacity 0.3s ease;
   -ms-transition: top 0.3s ease,opacity 0.3s ease;
   transition: top 0.3s ease,opacity 0.3s ease;
-}
-.floating-label-form-group::not(:first-child) {
-  padding-left: 14px;
-  border-left: 1px solid #eeeeee;
 }
 .floating-label-form-group-with-value label {
   top: 0;
