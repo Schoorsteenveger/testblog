@@ -1,0 +1,11 @@
+<div class="container container-showpost">
+  <h4>Comments</h4>
+
+  <div class="post-comments">
+    <% @post.comments.each do |comment| %>
+      <div class="row">
+        <p><%= comment.body %></p>
+      </div>
+    <% end %>
+  </div>
+</div>

@@ -1,0 +1,9 @@
+<h4>Add your comment</h4>
+<%= form_for([@post, @post.@.comments.build]) do |f| %>
+  <div class="form-group">
+    <%= f.text_erea :body, class: "form-control", placeholder: "Comments" %>
+  </div>
+  <p>
+    <%= f.submit "Submit", class: "btn btn-succes" %>
+  </p>
+<% end %>
