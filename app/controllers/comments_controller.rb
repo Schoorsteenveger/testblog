@@ -6,9 +6,9 @@ class CommentsController < ApplicationController
 
     respond_to do |format|
       if @comment.save
-        format.html { redirect_to @post, notice: "Commment was created succesfully." }
+        format.html { redirect_to @post, notice: "Comment was created succesfully." }
       else
-        format.html { redirect_to @post, alert: "Copmment was not saved succesfully." }
+        format.html { redirect_to @post, alert: "Comment was not saved succesfully." }
       end
     end
   end
@@ -16,6 +16,6 @@ class CommentsController < ApplicationController
   private
 
   def comment_params
-    params.require(:comment),permit(:post_id, :body)
+    params.require(:comment).permit(:post_id, :body)
   end
 end
